@@ -6,8 +6,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const options = new DocumentBuilder()
   .addBearerAuth()
-  .setTitle('Manga Reader API')
-  .setDescription('Manga reader, keep track and recommandation system by dotben')
+  .setTitle('Nest boilerplate')
+  .setDescription('Nest boilerplate with mongodb user and jwt auth')
   .setVersion('1.0')
   .build();
   const document = SwaggerModule.createDocument(app, options);
